@@ -31,7 +31,8 @@ $(document).ready(function() {
 
 
   //  $("p.test").text();
-    $("ul#lists").append("<li><span class='list'>" + toDo.name + "</span></li>");
+    //$("ul#radioDone").append("<li><select class='form-control' id='done'> <option value='NotDone'>Not Done</option><option value='Done'>Done</option></select></li>");
+      $("ul#lists").append("<li><span class='list'>" + toDo.name + " click Me" + "</span><div class='small'><select class='form-control' id='done'> <option value='NotDone'>Not Done</option><option value='Done'>Done</option></select></div></li>");
 
 
 $(".list").last().click(function() {
@@ -40,7 +41,7 @@ $(".list").last().click(function() {
   $(".do-output").text(toDo.name);
   $(".date-output").text(toDo.doBy);
 
- $("ul#addresses").text("");
+ //$("ul#addresses").text("");
 //   newContact.addresses.forEach(function(address) {
 //     $("ul#addresses").append("<li>" + address.fullAddress() + "</li>");
   });

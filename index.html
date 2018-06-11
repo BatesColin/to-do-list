@@ -1,46 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>To Do List</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/styles.css" rel="stylesheet" type="text/css">
-<script src="js/jquery-3.3.1.js"></script>
-<script src="js/scripts.js"></script>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>To Do List</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body class= "container-fluid">
 
-    <h1>To Do:</h1>
-    <form id="new-contact">
-      <div class="taskInfo">
+  <div class="container">
 
-        <div class="form-group">
-          <label for="toDoList">Enter to do</label>
+
+    <div class="row">
+      <div class="col-md-6 boxRight">
+        <h1>To Do:</h1>
+        <form id="new-contact">
+          <div class="taskInfo">
+
+            <div class="form-group">
+              <label for="toDoList">Enter to do</label>
               <input type="text" class="form-control" id="toDoList">
             </div>
 
-            <div class="form-group">
+            <!-- <div class="form-group" >
               <label for="toDoList">Enter do by date</label>
-                  <input type="text" class="form-control" id="doByDate">
-                </div>
-     </div>
+              <input type="text" class="form-control" id="doByDate">
+            </div>
+          </div> -->
 
-            <button type="submit" class="btn">Add</button>
-          </form>
+          <div class="form-group">
+            <label for="toDoList">Enter DO BY date</label>
+            <input id="doByDate" class="form-control" type="date">
+          </div>
 
-          <h2>Contacts:</h2>
-              <ul id="lists">
 
-               </ul>
-               <div class="output">
-                 
-                 <p>to do: <span class="do-output"></span></p>
-                 <p>Do by date: <span class="date-output"></span></p>
 
-               </div>
 
-    <p class="test"></p>
-    <p class="test1"></p>
-  </body>
+          <button type="submit" class="btn btn-success">Add to do</button>
+        </form>
+</div>
+
+      </div>
+      <div class="col-md-6 move">
+        <div class="output">
+
+          <p>to do: <span class="do-output"></span></p>
+          <p>Do by date: <span class="date-output"></span></p>
+
+        </div>
+      </div>
+
+      </div>
+    <div class="row">
+      <h2>To do list</h2>
+    <div class="col-md-6 done">
+
+      <ul id="lists">
+
+      </ul>
+    </div>
+    <div class="col-md-6">
+
+    </div>
+
+
+
+    </div>
+
+
+
+
+  <p class="test"></p>
+  <p class="test1"></p>
+
+</body>
 
 </html>
