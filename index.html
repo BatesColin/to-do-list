@@ -9,8 +9,11 @@
 <script src="js/scripts.js"></script>
   </head>
   <body>
+
     <h1>To Do:</h1>
     <form id="new-contact">
+      <div class="taskInfo">
+
         <div class="form-group">
           <label for="toDoList">Enter to do</label>
               <input type="text" class="form-control" id="toDoList">
@@ -20,11 +23,24 @@
               <label for="toDoList">Enter do by date</label>
                   <input type="text" class="form-control" id="doByDate">
                 </div>
-
+     </div>
 
             <button type="submit" class="btn">Add</button>
           </form>
+
+          <h2>Contacts:</h2>
+              <ul id="lists">
+
+               </ul>
+               <div class="output">
+                 
+                 <p>to do: <span class="do-output"></span></p>
+                 <p>Do by date: <span class="date-output"></span></p>
+
+               </div>
+
     <p class="test"></p>
     <p class="test1"></p>
   </body>
+
 </html>

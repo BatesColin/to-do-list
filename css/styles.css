@@ -1,0 +1,15 @@
+div.form-group {
+  width: 300px;
+}
+div.output {
+  display: none;
+  float: right;
+}
+
+.list:hover {
+  text-decoration: underline;
+  color: red;
+}
+div.output {
+  background-color: blue;
+}
